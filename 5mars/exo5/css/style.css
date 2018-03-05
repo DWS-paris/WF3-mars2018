@@ -1,0 +1,48 @@
+/* 
+Sélecteur par TAG (nom de la balise HTML)
+*/
+    h1{
+        /* Modifier la couleur du texte */
+        color: red;
+    }
+
+    p{
+        color: blue;
+    }
+
+    /* Selecteur par parent */
+    main p{
+        /* Modifier la taille de la police */
+        font-size: 20px;
+        color: grey;
+    }
+/**/
+
+
+/* 
+Sélecteur par class : prefixe "."
+*/
+    .textIntro{
+        color: green;
+    }
+/**/
+
+/* 
+Sélecter par ID : prefixe "#"
+*/
+    #myFooter{
+        color: fuchsia;
+    }
+/**/
+
+/* 
+Sélecteur CSS3
+*/
+    main p:nth-child(2){
+        color: orange;
+    }
+
+    p:not(:first-child){
+        text-transform: uppercase;
+    }
+/**/
