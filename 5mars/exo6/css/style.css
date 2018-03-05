@@ -1,0 +1,58 @@
+/* 
+Propriétés de style du texte
+*/
+    .firstParagraphe{
+        /* Changer la couleur */
+        color: grey;
+
+        /* Changer la taille de la police */
+        font-size: 16px;
+
+        /* Changer l'interlignage */
+        line-height: 20px;
+
+        /* Changer l'interlettrage (!!!) */
+        letter-spacing: 1px;
+    }
+
+    .firstParagraphe b{
+        /* Changer la casse */
+        text-transform: uppercase;
+    }
+/**/
+
+
+/* 
+Gestion des marges
+*/
+    p:nth-child(2){
+        /* Marge intérieure */
+        padding: 20px;
+
+        /* Marge exterieure */
+        margin: 20px;
+    }
+/**/
+
+/* 
+Gestion de la taille des balises
+*/
+    p:last-of-type{
+        padding: 10px;
+
+        /* Modifier la largeur */
+        width: 200px;
+
+        /* Modifier la hauteur */
+        height: 100px;
+
+        /* Gérer le débordement */
+        overflow: auto;
+
+        /* Centrer une balise bloc réduite en largeur */
+        margin: auto;
+
+        /* Ajouter une bordure */
+        border: 1px solid black;
+    }
+/**/

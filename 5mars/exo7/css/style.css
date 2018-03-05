@@ -1,0 +1,27 @@
+/* 
+Style Reset
+*/
+
+    /* Ramener la valeur 1 à 10px */
+    html{
+        font-size: 62.5%; /* 1rem => 10px */
+    }
+
+    body{
+        font-size: 1.5rem;
+    }
+
+/**/
+
+/* 
+Style header
+*/
+    h1{
+        font-size: 3rem;
+    }
+
+    /* La balise span du h1 est toujours deux fois plus petit que le h1 */
+    h1 span{
+        font-size: .5em;
+    }
+/**/
