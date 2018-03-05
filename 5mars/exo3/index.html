@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- Afficher les accents -->
+        <meta charset="UTF-8">
+        <!-- Configuration du Responsive design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Compatibilité IE -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Titre du document -->
+        <title>EXO3 : les types de balise</title>
+    </head>
+    <body>
+
+        <!-- Ouverture de la page : header -->
+        <header>
+            <!-- 
+            Titre principal de la page (doit être unique)
+            -->
+            <h1>EXO3 : <i>les types</i> de balise</h1>
+            <h2>Sous-titre</h2>
+            <h3>Sous-sous-titre</h3>
+            <h4> Sous-sous-sous titre</h4>
+        </header>
+
+        <!-- Contenu principal de la page : main -->
+        <main>
+
+            <!-- 
+            Balise <p> : paragraphe (block)
+            Balise <i> : italic (inline)
+            Balise <strong> : gras (inline)
+            -->
+            <p>Lorem ipsum <i>dolor sit amet</i>, consectetur adipisicing elit. Beatae recusandae <strong>neque aliquid officiis</strong> repellat iure aspernatur corrupti quia obcaecati ullam vero, eum vitae totam, cupiditate non facilis ipsum harum assumenda?</p>
+
+            <!-- 
+            Balise <ul> : liste non-numérotée (block)
+            -->
+            <ul>
+                <!-- 
+                Balise <li> : contenu de la liste (block)
+                -->
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ul>
+
+            <!-- 
+            Balise <ol> : liste numérotée (block)
+            -->
+            <ol>
+                <!-- 
+                Balise <li> : contenu de la liste (block)
+                -->
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ol>
+
+            <!-- 
+            Balise <a> : lien (inline)
+                attribut href : page à afficher après le clic
+                attribut targer="_blank" : ouvrir la page dans un autre onglet
+            -->
+            <a href="http://www.google.fr" target="_blank">Google</a>
+
+            <!--
+            Balise <img> : image (inline)
+                src : source/lien vers l'image
+                alt : texte alternatif
+            -->
+            <img src="./img/space.png" alt="Image de l'espace" width="300">
+
+
+            <!--
+            Afficher une image avec sa description
+            -->
+            <figure>
+                <!-- Ne pas ajouter l'attribut alt dans les figures -->
+                <img src="./img/space.png" width="300">
+
+                <!-- Remplacer l'attribut alt de l'image par une balise figcaption -->
+                <figcaption>Image de l'espace</figcaption>
+            </figure>
+        </main>
+
+        <!-- Fermeture de la page footer -->
+        <footer>
+            <p>Under MIT licence</p>
+        </footer>
+        
+    </body>
+</html>
