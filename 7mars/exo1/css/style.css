@@ -47,6 +47,9 @@ ul{
 
     /* Aligner les balises <li> (en inline-block) à droite */
     text-align: right;
+
+    /* Bloquer les enfants dans le parent */
+    position: relative;
 }
 
 
@@ -55,5 +58,62 @@ Changer le type de balise : display
 */
     li{
         display: inline-block;
+    }
+/**/
+
+/* 
+Balise #onLeft
+*/
+    #onLeft{
+        /* Bloquer les enfants dans le parent */
+        position: relative;
+    }
+
+    /* Placer la première <li> à gauche de #onleft */
+    #onLeft li:first-child{
+        position: absolute;
+        left: 2rem; /* 2rem => padding de la balise <ul> */
+    }
+/**/
+
+/* 
+Balise #onRight
+*/
+    #onRight{
+        /* Placer toutes les balises à gauche */
+        text-align: left;
+
+        /* Bloquer les enfants dans le parent */
+        position: relative;
+    }
+
+    #onRight li:last-child{
+        position: absolute;
+        right: 2rem; /* 2rem => padding de la balise <ul> */
+    }
+/**/
+
+/* 
+Balise #onCenter
+*/
+    #onCenter{
+        /* Centrer les balises <li> */
+        text-align: center;
+
+        /* Bloquer les enfants dans le parent */
+        position: relative;
+    }
+
+    #onCenter li:first-child, #onCenter li:last-child{
+        /* Sortir les balises du flux */
+        position: absolute;
+    }
+
+    #onCenter li:first-child{
+        left: 2rem;
+    }
+
+    #onCenter li:last-child{
+        right: 2rem;
     }
 /**/
