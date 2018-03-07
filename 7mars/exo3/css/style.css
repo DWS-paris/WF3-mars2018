@@ -1,0 +1,32 @@
+article{
+    font-size: 2rem;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+}
+
+section{
+    padding: 1rem;
+    border: .1rem dashed black;
+
+    width: 50rem;
+
+    /* Centrer une balise block réduite en largeur */
+    margin: auto;
+}
+
+#greenArticle{
+    background-color: green;
+}
+
+#yellowArticle{
+    background-color: yellow;
+}
+
+#redArticle{
+    background-color: red;
+}
+
+#greyArticle{
+    background-color: grey;
+}
