@@ -3,6 +3,7 @@ section {
     height: 10rem;
     border: .1rem solid red;
     padding: 2rem;
+    position: relative;
 
     /*  */
         display: inline-block;
