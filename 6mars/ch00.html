@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="FR-fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Cours html</title>
+	<link rel="icon" type="image/png" href="images/icone.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+<body>
+	<header>
+		<h1><i class="fab fa-accessible-icon" aria-hidden="true"></i> Cours html<sup>5</sup> &amp; Css<sub>3</sub></h1>
+	</header>
+	<main>
+		<div class="pictures" role="img">
+
+			<img src="./images/smiley.png" alt="logo smiley" data-image="Mon logo smiley">
+		<img src="./images/smiley.png" alt="logo smiley" data-image="Mon logo smiley">
+		<img src="./images/smiley.png" alt="logo smiley" data-image="Mon logo smiley">
+			
+		</div>
+		<article>
+			<h2>article</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea adipisci illum aspernatur placeat. Asperiores perspiciatis, labore animi odio, ea dicta consectetur. Soluta officiis facilis, velit sunt rem odio a vel.</p>
+		</article>
+	</main>
+	<footer>
+		<details>
+			<summary><span role="contentinfo">Liste</span></summary>
+			<ul>
+				<li><data value="01">HTML</data></li>
+				<li>CSS</li>
+				<li>Javascript</li>			
+			</ul>
+		</details>
+		<a href="https://www.bootstrapcdn.com/fontawesome/" title="Follow @tweet" target="_blank" class="btn-default btn-primary btn-icon">
+		Follow @tweet</a>
+		<button class="btn-default btn-warning btn-icon">@tweet</button>
+	</footer>
+	<!--La différence entre un élément a et button démo js-->
+	<script>
+		(function(){
+			let btn=document.querySelector('button');
+
+			btn.addEventListener('click',function(){
+				//console.log(this.tagName);
+				document.location.href="https://www.google.com";
+
+			});
+
+		})();
+	</script>
+</body>
+</html>
