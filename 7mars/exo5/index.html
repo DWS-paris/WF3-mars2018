@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- Afficher les accents -->
+        <meta charset="UTF-8">
+        <!-- Configuration du Responsive design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Compatibilité IE -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Titre du document -->
+        <title>EXO5 : Styliser une page HTML en CSS</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+
+        <!-- Ouverture de la page : header -->
+        <header>
+            <!-- Navigation principale : nav -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Start Bootstrap</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts </a></li>
+                </ul>
+            </nav>
+
+            <!-- Zone de contenu -->
+            <section>
+                <img src="./img/profile.png" alt="Image de profil">
+                <h1>Start Bootstrap</h1>
+                <p>Web Developer - Graphic Artist - User Experience Designer</p>
+            </section>
+        </header>
+
+        <!-- Contenu principal de la page : main -->
+        <main>
+            <!-- Zone de contenu : Portfolio -->
+            <section>
+                <h2>Portfolio</h2>
+                <ul>
+                    <li><a href="#"><img src="./img/cabin.png" alt="Image de cabin"></a></li>
+                    <li><a href="#"><img src="./img/cake.png" alt="Image de cake"></a></li>
+                    <li><a href="#"><img src="./img/circus.png" alt="Image de circus"></a></li>
+                    <li><a href="#"><img src="./img/game.png" alt="Image de game"></a></li>
+                    <li><a href="#"><img src="./img/safe.png" alt="Image de safe"></a></li>
+                    <li><a href="#"><img src="./img/submarine.png" alt="Image de submarine"></a></li>
+                </ul>
+            </section>
+
+            <!-- Zone de contenu : About -->
+            <section>
+                <h2>About</h2>
+                <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                <a href="#">Download Now!</a>
+            </section>
+
+            <!-- Zone de contenu : Contacts -->
+            <section>
+                <h2>Contacts</h2>
+
+                <!-- Ouvrir la balise <form> -->
+                <form action="message.php">
+
+                    <!-- Ajouter un champs pour le nom : ne pas oublier l'attribut name -->
+                    <input type="text" placeholder="Name" name="userName" required >
+
+                    <!-- Ajouter un champs pour l'email -->
+                    <input type="email" placeholder="Email Address" name="userEmail" required >
+
+                    <!-- Ajouter un champs pour le numéro de téléphone -->
+                    <input type="text" placeholder="Phone number" name="userPhone">
+
+                    <!-- Ajouter un champs pour le mot de passe -->
+                    <input type="password" placeholder="Your password" name="userPassword" required >
+
+                    <!-- Ajouter un champs pour une zone de texte -->
+                    <textarea placeholder="Message" name="userMessage" disabled></textarea>
+
+                    <!-- 
+                    Ajouter un bouton de type submit pour soumettre le formulaire
+                    <input type="submit" value="Soumettre">
+                    -->
+                    <button type="submit">Soumettre</button>
+
+                </form>
+
+            </section>
+        </main>
+
+        <!-- Fermeture de la page footer -->
+        <footer>
+            <!-- Zone de contenu -->
+            <section>
+                <article>
+                    <h3>Location</h3>
+                    <!-- Utilisateur d'une <iframe> -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.061192296264!2d2.396732451313287!3d48.85704350865385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d885b47c849%3A0xb76ce9ea6094ec29!2s7+Rue+des+Orteaux%2C+75020+Paris!5e0!3m2!1sfr!2sfr!4v1520258158646" allowfullscreen></iframe>
+                </article>
+
+                <article>
+                    <h3>Around the Web</h3>
+                    <!-- Ajouter les pictos -->
+                    <p><a href="#">FB</a></p>
+                </article>
+
+                <article>
+                    <h3>About Freelancer</h3>
+                    <p>Freelance is a free to use, open source Bootstrap theme created by Start Bootstrap.</p>
+                </article>
+            </section>
+
+            <p>Copyright © Your Website 2018</p>
+        </footer>
+        
+    </body>
+</html>
