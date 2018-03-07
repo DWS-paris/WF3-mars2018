@@ -3,25 +3,53 @@ article{
     color: white;
     width: 3rem;
     height: 3rem;
+
+    /* Sortir les articles du flux pour les repositionner */
+    position: absolute;
 }
 
 section{
     padding: 1rem;
     border: .1rem dashed black;
+
+    width: 50rem;
+    height: 7rem;
+
+    /* Centrer une balise block réduite en largeur */
+    margin: auto;
+
+    /* Bloquer les enfants dans le parent */
+    position: relative;
 }
 
 #greenArticle{
     background-color: green;
+
+    /* Placer l'article en bas à gauche */
+    bottom: 0;
+    left: 0;
 }
 
 #yellowArticle{
     background-color: yellow;
+
+    /* Placer l'article en haut à droite */
+    top: 0;
+    right: 0;
 }
 
 #redArticle{
     background-color: red;
+
+    /* Placer l'article en bas à droite */
+    bottom: 0;
+    right: 0;
 }
 
 #greyArticle{
     background-color: grey;
+
+    /* Placer l'article en haut à gauche */
+    top: 0;
+    left: 0;
 }
