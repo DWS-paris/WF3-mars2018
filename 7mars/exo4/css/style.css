@@ -1,0 +1,30 @@
+section {
+    width: 20rem;
+    height: 10rem;
+    border: .1rem solid red;
+    padding: 2rem;
+
+    /*  */
+        display: inline-block;
+        /* Gestion de l'alignement vertical */
+        vertical-align: top;
+    /*  */
+}
+
+article{
+    width: 15rem;
+    background-color: grey;
+
+
+    /* 
+    Le positionnement ultra centré
+    */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        -moz-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    /**/
+}

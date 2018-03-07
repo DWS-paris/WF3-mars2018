@@ -1,19 +1,31 @@
-article{
-    font-size: 2rem;
-    color: white;
-    width: 3rem;
-    height: 3rem;
-}
-
 section{
     padding: 1rem;
     border: .1rem dashed black;
-
     width: 50rem;
-
-    /* Centrer une balise block réduite en largeur */
     margin: auto;
+
+    /* 
+    Utilisation du principe de boites flexibles 
+    https://www.w3schools.com/css/css3_flexbox.asp
+    */
+    display: -ms-flex; /* constructeur IE */
+    display: -moz-flex; /* constructeur Firefox */
+    display: -webkit-flex; /* constructeur Chrome */
+    display: flex;
 }
+
+article{
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    width: 10%;
+}
+
+article:first-child{
+    width: 70%
+}
+
+
 
 #greenArticle{
     background-color: green;
