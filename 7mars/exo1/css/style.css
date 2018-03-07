@@ -1,0 +1,59 @@
+/* 
+Reset
+*/
+
+    a{
+        /* Supprimer le soulignement */
+        text-decoration: none;
+
+        /* Les balises <a> sont de la couleur définie sur leur parent */
+        color: inherit;
+    }
+
+    ul{
+        /* Supprimer les puces à gauche */
+        list-style: none;
+    }
+
+/**/
+
+
+/* 
+Démo color: inherit
+*/
+    body{
+        color: green;
+    }
+
+
+    footer{
+        color: purple;
+    }
+/**/
+
+/* Sélectionner la/les balise/s <ul> */
+ul{
+    /* texte en majuscule */
+    text-transform: uppercase;
+
+    /* couleur du texte white */
+    color: white;
+
+    /* couleur de fond #2c3e4f */
+    background-color: #2c3e4f;
+
+    /* Ajouter des la marge interieure tout autour */
+    padding: 2rem;
+
+    /* Aligner les balises <li> (en inline-block) à droite */
+    text-align: right;
+}
+
+
+/* 
+Changer le type de balise : display
+*/
+    li{
+        display: inline-block;
+    }
+/**/
