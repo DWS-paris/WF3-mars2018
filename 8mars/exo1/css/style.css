@@ -30,3 +30,50 @@ Style reset
     }
 
 /**/
+
+
+/*
+Style header
+*/
+
+    /* 
+    - Tous les liens de la nav sont sur une ligne, calés à gauche sauf le premier qui est à droite
+    - La largeur de la nav est de 900px maximum, et la nav est centrée dans la page
+    */
+    nav ul{
+        /* La largeur de la nav est de 900px maximum */
+        max-width: 90rem;
+
+        /* la nav est centrée dans la page */
+        margin: auto;
+
+        /* Bloquer les enfants (en position absolute) dans le parent */
+        position: relative;
+    }
+
+    #homeBtn{
+        /* Sortir la ba:ise du flux de lecture logique */
+        position: absolute;
+
+        /* Placer la balise à droite du parent en position relative */
+        right: 0;
+    }
+
+    nav li{
+        display: inline-block;
+    }
+
+    /* Ajouter l'image de fond avec un principe de parallax */
+    header{
+        /* Le header fait 100% de la hauteur de la page */
+        height: 100vh; /* View Height : hauteur de la vue/fenêtre */
+        background-image: url('../img/spaceMan.png');
+        background-repeat: no-repeat;
+        
+        background-size: cover; /* L'image s'adapte a la balise en largeur ou en hauteur */
+        background-position: center; /* L'image est au centre de la balise */
+        background-attachment: fixed; /* l'image ne bouge pas => effet parallax */
+    }
+
+    /* Le titre principal est TOUJOURS au centre du header */
+/**/
