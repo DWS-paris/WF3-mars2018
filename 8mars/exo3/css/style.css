@@ -69,6 +69,18 @@ Style header
         background-color: #18bc9c;
     }
 
+    /* 
+    Sélectionner la balise <a> qui est enfant direct de la balise <nav>
+    nav > a {...}
+    */
+
+    /* 
+    Sélectionner la balise <a> qui à pour valeur de href "index.html"
+    */
+    a[href="index.html"]:hover + ul, nav ul:hover{
+        display: block;
+    }
+
     nav{
         text-align: center;
         padding: 2rem 0;
@@ -94,11 +106,14 @@ Style header
 
         /* Bloquer les enfants dans leur parent */
         position: relative;
+
+        /* Pour l'animation */
+        display: none;
     }
 
     
     h1 {
-        font-size: 6rem;
+        font-size: 4rem;
         padding-top: 4rem;
 
         /* Bloquer les enfants dans le parent (::after et ::before également) */
@@ -133,7 +148,7 @@ Style header
     }
 
     header p{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 /**/
 
