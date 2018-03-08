@@ -5,6 +5,8 @@ Style reset
     - passer d'une base 16 à une base 10
 */
 
+    @import url('https://use.fontawesome.com/releases/v5.0.8/css/all.css');
+
     *{
         /* supprimer toutes les marges */
         margin: 0;
@@ -23,6 +25,89 @@ Style reset
 
     body{
         font-size: 1.5rem;
+        text-align: center;
     }
+/**/
+
+/* 
+Style global
+*/
+    header, section, footer{
+        padding: 3rem;
+    }
+/**/
+
+/* 
+Style header
+*/
+    /* Gestion des transitions */
+    h1{
+        color: red;
+        background-color: blue;
+
+        -moz-transition: color .3s, background .5s;
+        -webkit-transition: color .3s, background .5s;
+        transition: color .3s, background .5s;
+    }
+
+    h1:hover{
+        color: blue;
+        background-color: purple;
+    }
+
+
+    /* Masquer la <nav> sur smartphone */
+    nav {
+        /* Autre solution = display: none */
+        height: 0;
+        overflow: hidden;
+
+        /* Gérer la transition */
+        -moz-transition: height .3s;
+        -webkit-transition: height .3s;
+        transition: height .3s;
+    }
+
+    header button:hover + nav, nav:hover{
+        height: 12rem;
+    }
+/**/
+
+
+/* 
+Media queries
+*/
+
+    /* Les écrans d'une taille minimale de 500px */
+    @media screen and (min-width: 500px){
+
+        /* Aligner le texte à gauche */
+        body{
+            text-align: left;
+        }
+
+    } /* Fin de la requête 500px */
+
+    /* Les écrans d'une taille minimale de 700px */
+    @media screen and (min-width: 700px){
+
+        /* Afficher la nav et masquer le bouton */
+        nav{
+            height: auto;
+        }
+
+        header button{
+            display: none;
+        }
+
+        /* Passer le main en 2 colonnes */
+        main, nav ul{
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: flex;
+        }
+
+    } /* Fin de la requête 700px */
 
 /**/
