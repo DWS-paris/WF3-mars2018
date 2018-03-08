@@ -3,6 +3,7 @@ Style Reset
 */
     /* Importer les polices google font */
     @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700');
+    @import url('https://use.fontawesome.com/releases/v5.0.8/css/all.css');
 
     *{
         /* Supprimer toutes les marges de toutes les balises */
@@ -157,45 +158,132 @@ Style header
 Style Main
 */
     /* Portfolio */
-    #portfolio{
-        max-width: 94rem;
-        margin: auto;
-    }
+        #portfolio{
+            max-width: 94rem;
+            margin: auto;
+        }
 
-    #portfolio li{
-        padding: 2rem;
-    }
+        #portfolio li{
+            padding: 2rem;
+        }
 
     /* about */
-    #about{
-        text-align: center;
-        background-color: #18bc9c;
-    }
+        #about{
+            text-align: center;
+            background-color: #18bc9c;
+        }
 
-    #about article{
-        font-size: 1.7rem;
-        text-align: left;
-        max-width: 70rem;
-        margin: auto;
-    }
+        #about article{
+            font-size: 1.7rem;
+            text-align: left;
+            max-width: 70rem;
+            margin: auto;
+        }
 
-    #about h2{
-        color: white;
-    }
+        #about h2{
+            color: white;
+        }
 
-    #about p{
-        padding: 1rem;
-    }
+        #about p{
+            padding: 1rem;
+        }
+
+    /* Contacts */
+        form{
+            padding: 0 2rem;
+            max-width: 70rem;
+            margin: auto;
+        }
+
+        input, textarea{
+            font-size: 2rem;
+
+            /* Changer le type de boite */
+            display: block;
+            width: 100%;
+
+            border: none;
+            border-bottom: .1rem solid #2c3e4f;
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+        }
+
+        textarea{
+            min-height: 15rem;
+        }
+
+        [type="submit"]{
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            padding: 2rem;
+            border: none;
+            background-color: #18bc9c;
+
+            /* https://www.w3schools.com/cssref/css3_pr_border-radius.asp */
+            -moz-border-radius: .5rem;
+            -webkit-border-radius: .5rem;
+            border-radius: .5rem;
+        }
 
 /**/
 
 
-@media screen and (min-width: 500px){
-    #about article {
-       
-        display: -ms-flex;
-        display: -moz-flex;
-        display: -webkit-flex;
-        display: flex;
+/* 
+Style footer
+*/
+    footer {
+        background-color: #2c3e4f;
+        padding: 8rem 2rem;
+        text-align: center;
     }
-}
+
+    footer h3{
+        margin-bottom: 2rem;
+    }
+
+    iframe{
+        width: 100%;
+        min-height: 25rem;
+        border: none;
+        margin-bottom: 3rem;
+    }
+/**/
+
+
+
+
+
+
+
+
+/* 
+Requête media
+*/
+    @media screen and (min-width: 500px){
+        #about article, #portfolio ul, footer section {
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: flex;
+
+            -ms-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+
+        #about p {
+            width: 50%;
+        }
+
+        footer section{
+            max-width: 90rem;
+            margin: auto;
+        }
+
+        #portfolio li, footer article{
+            width: 33.333%;
+        }
+    }
+/**/
