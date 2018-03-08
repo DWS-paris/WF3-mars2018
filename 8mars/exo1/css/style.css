@@ -73,7 +73,28 @@ Style header
         background-size: cover; /* L'image s'adapte a la balise en largeur ou en hauteur */
         background-position: center; /* L'image est au centre de la balise */
         background-attachment: fixed; /* l'image ne bouge pas => effet parallax */
+
+        /* Bloquer les enfants dans le parent */
+        position: relative;
     }
 
     /* Le titre principal est TOUJOURS au centre du header */
+    h1{
+        background-color: white;
+        padding: 2rem;
+
+        /* Sortir du flux pour la repositionner */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        /* 
+        Décaler la balise de 50% de sa taille en haut à gauche 
+        https://www.w3schools.com/cssref/css3_pr_transform.asp
+        */
+        -ms-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
 /**/
