@@ -8,6 +8,8 @@ Style reset
     - intégrer les border et les padding dans la taille des boites/balises
     - passer d'une base 16 à une base 10
 */
+    
+    @import url('https://use.fontawesome.com/releases/v5.0.8/css/all.css');
 
     *{
         /* supprimer toutes les marges */
@@ -27,6 +29,7 @@ Style reset
 
     body{
         font-size: 1.5rem;
+        text-align: center;
     }
 
 /**/
@@ -36,32 +39,14 @@ Style reset
 Style header
 */
 
-    /* 
-    - Tous les liens de la nav sont sur une ligne, calés à gauche sauf le premier qui est à droite
-    - La largeur de la nav est de 900px maximum, et la nav est centrée dans la page
-    */
-    nav ul{
-        /* La largeur de la nav est de 900px maximum */
-        max-width: 90rem;
-
-        /* la nav est centrée dans la page */
-        margin: auto;
-
-        /* Bloquer les enfants (en position absolute) dans le parent */
-        position: relative;
+    /* Masquer la nav sur smartphone */
+    nav{
+        display: none;
+        background-color: white;
+        padding: 2rem;
     }
 
-    #homeBtn{
-        /* Sortir la ba:ise du flux de lecture logique */
-        position: absolute;
-
-        /* Placer la balise à droite du parent en position relative */
-        right: 0;
-    }
-
-    nav li{
-        display: inline-block;
-    }
+   
 
     /* Ajouter l'image de fond avec un principe de parallax */
     header{
@@ -97,4 +82,134 @@ Style header
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
+/**/
+
+/* 
+Style main
+*/
+    main {
+        padding-bottom: 6rem;
+    }
+
+    main section{
+        padding: 4rem;
+    }
+/**/
+
+/* 
+Style footer
+*/
+    /* Le footer est toujours visible en bas du body (sans bouger) */
+    footer{
+        /* Figer la position de la balise */
+        position: fixed;
+
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 2rem;
+
+        background-color: white;
+        border-top: .1rem solid black;
+    }
+/**/
+
+/* 
+Media queries
+*/
+
+    @media screen and (min-width: 650px){
+
+        /* 
+        Style header
+        */
+            /* Afficher la <nav> */
+            nav{
+                text-align: left;
+                /*display: initial;  Retour au display natif */
+                display: block;
+                background-color: white;
+            }
+
+            /* Masquer le burger menu */
+            header button{
+                display: none;
+            }
+
+            /* 
+            - Tous les liens de la nav sont sur une ligne, calés à gauche sauf le premier qui est à droite
+            - La largeur de la nav est de 900px maximum, et la nav est centrée dans la page
+            */
+            nav ul{
+                /* La largeur de la nav est de 900px maximum */
+                max-width: 90rem;
+
+                /* la nav est centrée dans la page */
+                margin: auto;
+
+                /* Bloquer les enfants (en position absolute) dans le parent */
+                position: relative;
+
+                padding: 2rem;
+            }
+
+            #homeBtn{
+                /* Sortir la ba:ise du flux de lecture logique */
+                position: absolute;
+
+                /* Placer la balise à droite du parent en position relative */
+                right: 0;
+            }
+
+            nav li{
+                display: inline-block;
+            }
+        /**/
+
+    } /* Fin de la requête 650px */
+
+
+    /* Pour les écrans d'une taille minimale de 900px */
+    @media screen and (min-width: 900px){
+
+        /* 
+        Les deux premières <section> du <main> sont sur une ligne et le texte est aligné à gauche
+        La dernière <section> du <main> fait 100% de la largeur du <main> et le text est centré
+        */
+
+        main{
+            /* La largeur maximal du contenu site est de 900px */
+            max-width: 90rem;
+            /* le site est centré dans la largeur de la page */
+            margin: auto;
+
+            /* Mise en place de boites flexibles */
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: flex;
+
+            -ms-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+
+        main section{
+            text-align: left;
+            width: 50%;
+        }
+
+        main section:last-child{
+            text-align: center;
+            width: 100%;
+        }
+
+        header{
+            /* Le header fait la moitié de la hauteur totale de la page */
+            height: 50vh; /* View Height */
+        }
+
+    }
+
 /**/

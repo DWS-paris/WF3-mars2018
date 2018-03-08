@@ -16,7 +16,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Exo 1 : révisions HTML/CSS</title>
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/style.min.css">
     </head>
     <body>
 
@@ -24,7 +24,10 @@
         Ouverture de page
         -->
         <header> 
-            <nav>
+            <!-- Bouton burger menu -->
+            <button id="burgerMenu"><i class="fas fa-bars"></i></button>
+
+            <nav id="mainNav">
                 <ul>
                     <li id="homeBtn"><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -61,5 +64,18 @@
         <footer>
             <p>Under MIT Licence</p>
         </footer>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+        <script>
+            
+            var burgerMenu = $('#burgerMenu');
+            var mainNav = $('#mainNav');
+
+            burgerMenu.click( function(){
+                mainNav.slideToggle();
+            });
+        
+        </script>
     </body>
 </html>
