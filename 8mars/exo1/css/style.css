@@ -1,0 +1,32 @@
+/* 
+Sourvce GitHub : https://goo.gl/uojHv7
+*/
+
+/* 
+Style reset
+    - supprimer toutes (*{...}) les marges : padding/margin
+    - intégrer les border et les padding dans la taille des boites/balises
+    - passer d'une base 16 à une base 10
+*/
+
+    *{
+        /* supprimer toutes les marges */
+        margin: 0;
+        padding: 0;
+
+        /* intégrer les border et les padding dans la taille des boites/balises */
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    /* passer d'une base 16 à une base 10 */
+    html{
+        font-size: 62.5%; /* 1rem => 10px */
+    }
+
+    body{
+        font-size: 1.5rem;
+    }
+
+/**/
