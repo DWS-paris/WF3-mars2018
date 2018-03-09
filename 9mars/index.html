@@ -10,27 +10,30 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
-        <header>
+        <!-- Le header est fluid : 100% de la largeur de la page -->
+        <header class="container-fluid">
             <nav>
                 <p>test</p>
             </nav>
             <p>test</p>
         </header>
-        <main>
-            <section>
+        <main class="container-fluid">
+
+            <!-- La section #portfolio est limitée dans la largeur -->
+            <section class="container" id="portfolio">
                 <p>test</p>
             </section>
 
-            <section>
+            <section class="container-fluid" id="about">
                 <p>test</p>
             </section>
 
-            <section>
+            <section class="container" id="contacts">
                 <p>test</p>
             </section>
         </main>
 
-        <footer>
+        <footer class="container-fluid">
             <p>test</p>
         </footer>
 
