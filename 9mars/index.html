@@ -11,17 +11,47 @@
     </head>
     <body>
         <!-- Le header est fluid : 100% de la largeur de la page -->
-        <header class="container-fluid">
-            <nav>
-                <p>test</p>
+        <header class="container-fluid text-center">
+            <nav class="container">
+                <ul class="nav nav-pills justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Start Bootstrap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacts</a>
+                    </li>
+                </ul>
             </nav>
-            <p>test</p>
+
+            <section class="container text-center">
+                <img src="./img/profile.png" alt="Image de profil">
+                <h1>Start Bootstrap</h1>
+                <p>Web Developer - Graphic Artist - User Experience Designer</p>
+            </section>
         </header>
+
         <main class="container-fluid">
 
             <!-- La section #portfolio est limitée dans la largeur -->
             <section class="container" id="portfolio">
-                <p>test</p>
+                <h2>Portfolio</h2>
+                <ul class="row">
+                    <li class="col"><a href="#"><img src="./img/cabin.png" alt="Image de cabin"></a></li>
+                    <li class="col"><a href="#"><img src="./img/cake.png" alt="Image de cake"></a></li>
+                    <li class="col"><a href="#"><img src="./img/circus.png" alt="Image de circus"></a></li>
+                    
+                    <li class="w-100"></li>
+
+                    <li class="col"><a href="#"><img src="./img/game.png" alt="Image de game"></a></li>
+                    <li class="col"><a href="#"><img src="./img/safe.png" alt="Image de safe"></a></li>
+                    <li class="col"><a href="#"><img src="./img/submarine.png" alt="Image de submarine"></a></li>
+                </ul>
             </section>
 
             <section class="container-fluid" id="about">
