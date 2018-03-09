@@ -8,6 +8,9 @@
 
         <!-- Intégration du CDN Bootstrap 4 CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- Intégrer la feuille de style de la page APRES Bootstrap -->
+        <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
         <!-- Le header est fluid : 100% de la largeur de la page -->
@@ -40,7 +43,7 @@
 
             <!-- La section #portfolio est limitée dans la largeur -->
             <section class="container" id="portfolio">
-                <h2>Portfolio</h2>
+                <h2 class="text-center">Portfolio</h2>
                 <ul class="row">
                     <li class="col"><a href="#"><img src="./img/cabin.png" alt="Image de cabin"></a></li>
                     <li class="col"><a href="#"><img src="./img/cake.png" alt="Image de cake"></a></li>
@@ -54,12 +57,44 @@
                 </ul>
             </section>
 
-            <section class="container-fluid" id="about">
-                <p>test</p>
+            <section class="container-fluid text-center" id="about">
+                <h2>About</h2>
+                <article class="container text-left">
+                    <div class="row">
+                        <p class="col">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                        
+                        <p class="col">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                    </div>
+                </article>
+                <button type="button" class="btn btn-outline-primary">Download Now!</button>
             </section>
 
             <section class="container" id="contacts">
-                <p>test</p>
+                <h2 class="text-center">Contacts</h2>
+
+                <!-- Ouvrir la balise <form> -->
+                <form action="message.php">
+                    <!-- Ajouter un champs pour le nom : ne pas oublier l'attribut name -->
+                    <input class="form-control" type="text" placeholder="Name" name="userName" required >
+
+                    <!-- Ajouter un champs pour l'email -->
+                    <input class="form-control" type="email" placeholder="Email Address" name="userEmail" required >
+
+                    <!-- Ajouter un champs pour le numéro de téléphone -->
+                    <input class="form-control" type="text" placeholder="Phone number" name="userPhone">
+
+                    <!-- Ajouter un champs pour le mot de passe -->
+                    <input class="form-control" type="password" placeholder="Your password" name="userPassword" required >
+
+                    <!-- Ajouter un champs pour une zone de texte -->
+                    <textarea class="form-control" placeholder="Message" name="userMessage"></textarea>
+
+                    <!-- 
+                    Ajouter un bouton de type submit pour soumettre le formulaire
+                    <input type="submit" value="Soumettre">
+                    -->
+                    <button type="submit" class="btn btn-primary">Soumettre</button>
+                </form>
             </section>
         </main>
 
