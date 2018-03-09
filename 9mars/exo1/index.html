@@ -9,8 +9,11 @@
         <!-- Intégration du CDN Bootstrap 4 CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
         <!-- Intégrer la feuille de style de la page APRES Bootstrap -->
         <link rel="stylesheet" href="./css/style.css">
+
     </head>
     <body>
         <!-- Le header est fluid : 100% de la largeur de la page -->
@@ -35,16 +38,16 @@
             </nav>
 
             <section class="container text-center">
-                <img src="./img/profile.png" alt="Image de profil">
-                <h1>Start Bootstrap</h1>
-                <p>Web Developer - Graphic Artist - User Experience Designer</p>
+                <img src="./img/profile.png" alt="Image de profil" class="animated infinite">
+                <h1 class="animated fadeInRight">Start Bootstrap</h1>
+                <p class="animated fadeInUp">Web Developer - Graphic Artist - User Experience Designer</p>
             </section>
         </header>
 
         <main class="container-fluid">
 
             <!-- La section #portfolio est limitée dans la largeur -->
-            <section class="container" id="portfolio">
+            <section class="container animated fadeInRight" id="portfolio">
                 <h2 class="text-center">Portfolio</h2>
                 <ul class="row">
                     <li class="col-sm-12 col-md-6 col-lg-4"><a href="#"><img src="./img/cabin.png" alt="Image de cabin"></a></li>
@@ -132,5 +135,21 @@
             <!-- Intégration du CDN Bootstrap JS -->
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <!--  -->
+
+        <script>
+        
+            var profilBtn = $('[alt="Image de profil"]');
+
+            profilBtn.click(function(){
+
+                profilBtn.addClass('bounce');
+
+                window.setTimeout(function(){
+                    window.location = 'http://www.google.fr'
+                }, 3000)
+
+            });
+        
+        </script>
     </body>
 </html>
