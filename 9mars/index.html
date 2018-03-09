@@ -15,21 +15,23 @@
     <body>
         <!-- Le header est fluid : 100% de la largeur de la page -->
         <header class="container-fluid text-center">
-            <nav class="container">
-                <ul class="nav nav-pills justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Start Bootstrap</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacts</a>
-                    </li>
-                </ul>
+            <nav>
+                <div class="container">
+                    <ul class="nav nav-pills justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link warning" href="index.html">Start Bootstrap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
 
             <section class="container text-center">
@@ -45,15 +47,12 @@
             <section class="container" id="portfolio">
                 <h2 class="text-center">Portfolio</h2>
                 <ul class="row">
-                    <li class="col"><a href="#"><img src="./img/cabin.png" alt="Image de cabin"></a></li>
-                    <li class="col"><a href="#"><img src="./img/cake.png" alt="Image de cake"></a></li>
-                    <li class="col"><a href="#"><img src="./img/circus.png" alt="Image de circus"></a></li>
-                    
-                    <li class="w-100"></li>
-
-                    <li class="col"><a href="#"><img src="./img/game.png" alt="Image de game"></a></li>
-                    <li class="col"><a href="#"><img src="./img/safe.png" alt="Image de safe"></a></li>
-                    <li class="col"><a href="#"><img src="./img/submarine.png" alt="Image de submarine"></a></li>
+                    <li class="col-sm-12 col-md-6 col-lg-4"><a href="#"><img src="./img/cabin.png" alt="Image de cabin"></a></li>
+                    <li class="col-sm-12 col-md-6 col-lg-4"><a href="#"><img src="./img/cake.png" alt="Image de cake"></a></li>
+                    <li class="col-sm-12 col-md-6 col-lg-4"><a href="#"><img src="./img/circus.png" alt="Image de circus"></a></li>
+                    <li class="col-sm-12 col-md-6 col-lg-4"><a href="#"><img src="./img/game.png" alt="Image de game"></a></li>
+                    <li class="col-sm-12 col-md-6 col-lg-4"><a href="#"><img src="./img/safe.png" alt="Image de safe"></a></li>
+                    <li class="col-sm-12 col-md-6 col-lg-4"><a href="#"><img src="./img/submarine.png" alt="Image de submarine"></a></li>
                 </ul>
             </section>
 
@@ -66,7 +65,7 @@
                         <p class="col">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
                     </div>
                 </article>
-                <button type="button" class="btn btn-outline-primary">Download Now!</button>
+                <button type="button" class="btn btn-outline-primary"><i class="fas fa-download"></i> Download Now!</button>
             </section>
 
             <section class="container" id="contacts">
@@ -98,8 +97,27 @@
             </section>
         </main>
 
-        <footer class="container-fluid">
-            <p>test</p>
+        <footer class="container-fluid card text-center">
+            <section class="container">
+                <div class="row">
+                    <article class="col">
+                        <h3>Location</h3>
+                        <p>7, rue des Orteaux 785020 Paris</p>
+                    </article>
+
+                    <article class="col">
+                        <h3>Around the Web</h3>
+                        <p><a href="#" target="_blank"><i class="fab fa-github"></i></a> <a href="#"  target="_blank"><i class="fab fa-linkedin-in"></i></a> <a href="#"  target="_blank"><i class="fab fa-facebook-f"></i></a></p>
+                    </article>
+
+                    <article class="col">
+                        <h3>About Freelancer</h3>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by Start Bootstrap.</p>
+                    </article>
+                </div>
+            </section>
+
+            <p class="card-footer">Copyright © Your Website 2018</p>
         </footer>
 
         <!-- 
