@@ -1,0 +1,49 @@
+/* 
+Reset
+*/
+    html{
+        font-size: 62.5%;
+    }
+
+    body{
+        font-size: 1.5rem;
+    }
+
+    .container{
+        max-width: 90rem;
+    }
+/**/
+
+/* 
+Style Header
+*/
+    header{
+        height: 50vh ;
+        background-image: url('../img/spaceMan.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        /* Bloquer les enfant dans le parent */
+        position: relative;
+    }
+
+    nav{
+        background-color: white;
+        padding: 2rem 0;
+    }
+
+    h1{
+        padding: 2rem;
+        background-color: white;
+
+        /* Sortire la balise du flux */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        -moz-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+/**/
